@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<style>
+.ncontainer2 {  
+      
+    display: block;  
+    flex-direction: column;  
+     align-items: center;
+    justify-content: center;
+    
+     
+    border-radius: 5vh ;
+    position:fixed;top:25vh ;
+    background-color: black;
+    height:30vh;
+      
+    color: white;
+    font-size: 5vh;
+    border-top: 4vh solid white;
+    border-bottom: 4vh solid white;
+    
+  
+  center: 0;
+    right: 0;
+     width: 100%; 
+}
+.container{  
+      
+    display: block;  
+    flex-direction: column;  
+     align-items: center;
+    justify-content: center;
+    position:fixed;
+  top:0;left:0;
+    height:100%;;
+      background-color: transparent;
+     width: 100%; 
+}
+.bt3
+{
+  display:block;
+  margin:1vh; 
+  width: 95%; 
+  border-radius: 90px;
+  font-size: 3vh;
+  padding: 2vh;
+    border:2px solid white;
+    color: white;
+    background: black ;
+}
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+a {text-align: center; background:white;color:black;}
+</style>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Best Trailers</title>
+</head>
+
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+<body style="background:black">
+    
+    <div style="display:block; flex-direction:column; align-items:center;justify-content:center;border:1vh solid grey;border-radius:15vh;height:22vh;background: white">
+        <h1 style="font-size:6vh; color:black;margin:1vh;padding:7vh">Best Trailers
+        <div style="font-size:2vh;color:green">Recommending the best videos</div></h1>
+    </div> 
+    <div style="color: white;font-size:2vh;width:100%;"> We bring you some of the best movies so you won't have to waste time searching for good movies or downloading boring ones.
+    <p>Watch a video to the end without fast forwarding and get 30 AliensAndWhot game minutes. To claim your reward, you will need to have <a href="https://google.com">our app already installed</a> on your device.</p></div>
+    <bt id="bts"> </bt>
+    </br></br></br>
+   <div id="player" style="width:100%;"></div>
+    </br></br></br> </br></br></br></br></br></br> </br></br></br> </br></br></br> </br></br></br>     
+    
+</body>
+
+<div class="container" id="pop" style="display: none"> 
+  <div id="ppp" class="ncontainer2">
+  <div style="position: absolute;  top: 10px;justify-content: center ;color: white; font-size: 4vh;">Best Trailers</div>
+  <div id="c12" onclick="closePopUp();" style="  position: absolute;  top: 10px; right: 15px; color: white; font-size: 4vh;  text-decoration: none;">X</div>
+  <div id="popmsg" style="display:flex;flex-direction:column;  
+     align-items: center;width:94%;
+    justify-content: center;font-size:3vh;margin-bottom:4vh;margin-top:10vh;"> 
+    Congratulations! You've successfully completed the video.
+    
+   
+  </div>
+    
+  <div id="link">
+    <a  href="intent://aw.game/testing#Intent;scheme=aw;package=com.awgames.aliensandwhot;S.browser_fallback_url=https://google.com;end" style=" display:inline;z-index:3; margin-top:6px; background: white; border:1px solid white;font-size:3vh; border-radius:2vh;color:#2e2e2e;width:100%; padding:10px;"> Click to claim reward</a>
+
+  </div>
+  
+   </div>
+    <script src="yt.js" type="text/javascript"></script>
+  
+</html>
