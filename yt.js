@@ -24,11 +24,14 @@ function onPlayerStateChange(e)
   {
     clearInterval(counter);
     if(count>player.getDuration())
-    {let a='<a  href="intent://mc2025.mc/'+'_'+player.getDuration()+'#Intent;scheme=mc;package=com.mcgames.mcapp;S.browser_fallback_url=https://google.com;end" style=" display:inline;z-index:3; margin-top:6px; background: white; border:1px solid white;font-size:3vh; border-radius:2vh;color:#2e2e2e;width:100%; padding:10px;"> Click to claim reward</a>';
+    {
+      /*let a='<a  href="intent://mc2025.mc/'+'_'+player.getDuration()+'#Intent;scheme=mc;package=com.mcgames.mcapp;S.browser_fallback_url=https://google.com;end" style=" display:inline;z-index:3; margin-top:6px; background: white; border:1px solid white;font-size:3vh; border-radius:2vh;color:#2e2e2e;width:100%; padding:10px;"> Click to claim reward</a>';
     document.getElementById('link').innerHTML=a;
     document.getElementById('popmsg').innerHTML="Congratulations! You've successfully completed the video."
      pop.style.display= "block";
     setTimeOut(closePopUp,20000);
+      */
+      window.location.href="https://rtstg.com/'+'_'+player.getDuration()";
     }else{ document.getElementById('popmsg').innerHTML='Sorry, you fast fowarded the video and cannot be awarded the reward. Click the video title button again to watch without forwarding to receive your reward.'; document.getElementById('link').innerHTML=""; pop.style.display= "block";}
     count=1;
   }
