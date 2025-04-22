@@ -31,7 +31,8 @@ function onPlayerStateChange(e)
      pop.style.display= "block";
     setTimeOut(closePopUp,20000);
       */
-      window.location.href="https://rtstg.com/'+'_'+player.getDuration()";
+      //let ex=player.getDuration();
+      window.location.href="https://rtstg.com/rtstg";
     }else{ document.getElementById('popmsg').innerHTML='Sorry, you fast fowarded the video and cannot be awarded the reward. Click the video title button again to watch without forwarding to receive your reward.'; document.getElementById('link').innerHTML=""; pop.style.display= "block";}
     count=1;
   }
